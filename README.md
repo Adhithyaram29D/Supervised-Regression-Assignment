@@ -9,16 +9,30 @@ problem. Please explain your rationale behind dataset choices.
 ### Approach Overview:
 Dataset Generation
 
-A synthetic dataset is created since no real-world data is available.
-Each sample is a 50×50 grayscale image with exactly one pixel set to 255 and all remaining pixels set to 0.
+A synthetic dataset is generated since no real-world dataset is available.
+
+Each image is generated programmatically with: 
+
+Size: 50 × 50
+
+One pixel set to 255
+
+Remaining pixels set to 0
+
+Labels are normalized (x, y) coordinates of the bright pixel.
 
 Model Selection
 
-A Convolutional Neural Network (CNN) is used to learn spatial patterns in the image.
+A Convolutional Neural Network (CNN) is used.
+
+CNNs are well-suited for spatial feature extraction in images.
+
+The network outputs two values corresponding to (x, y) coordinates.
 
 Loss Function
 
-Mean Squared Error (MSE) is used as the task involves coordinate regression.
+Mean Squared Error (MSE) is used as this is a regression problem.
+
 
 ## Program
 
