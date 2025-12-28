@@ -15,7 +15,6 @@ Each sample is a 50×50 grayscale image with exactly one pixel set to 255 and al
 Model Selection
 
 A Convolutional Neural Network (CNN) is used to learn spatial patterns in the image.
-The model takes a 50×50 image as input and outputs two continuous values representing the pixel’s (x, y) coordinates.
 
 Loss Function
 
