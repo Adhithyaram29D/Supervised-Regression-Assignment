@@ -11,7 +11,6 @@ Dataset Generation
 
 A synthetic dataset is created since no real-world data is available.
 Each sample is a 50×50 grayscale image with exactly one pixel set to 255 and all remaining pixels set to 0.
-The corresponding label is the normalized (x, y) coordinate of the bright pixel.
 
 Model Selection
 
